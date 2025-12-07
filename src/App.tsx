@@ -24,6 +24,8 @@ function App() {
   const [isUploadWidgetOpen, setIsUploadWidgetOpen] = useState(false); // ya no lo usás si abrís modal directo, pero lo dejo por si lo querés más adelante
   const [customBucket, setCustomBucket] = useState(""); // 👈 nombre de bucket nuevo opcional
 
+  console.warn(isUploadWidgetOpen);
+
   // 🔹 Cargar lista de buckets
   useEffect(() => {
     const fetchBuckets = async () => {

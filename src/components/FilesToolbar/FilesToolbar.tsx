@@ -44,7 +44,6 @@ export function FilesToolbar({
         imagesOnly={false}
         clearable
         tabs="" // 👈 Esto evita que Uploadcare dibuje cualquier botón
-        style={{ display: "none" }} // y por las dudas lo ocultamos igual
         onChange={(fileInfo: any) => {
           if (!fileInfo) return;
 

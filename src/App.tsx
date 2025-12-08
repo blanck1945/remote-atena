@@ -158,16 +158,14 @@ function App() {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      <header className="mb-4 p-4 bg-gray-200 border-b border-gray-400 flex items-center justify-between">
+      <header className="mb-4 p-4 bg-violet-800 border-b border-gray-400 flex items-center justify-between">
         <SafeLink
           to="/"
-          className="text-slate-700 hover:underline text-lg font-semibold"
+          className="text-white hover:underline text-lg font-semibold"
         >
-          Go to Host
+          Host
         </SafeLink>
-        <h1 className="text-2xl md:text-3xl text-slate-700 font-bold underline">
-          Atena
-        </h1>
+        <h1 className="text-2xl md:text-3xl text-white">ATENA</h1>
       </header>
 
       <main className="max-w-5xl mx-auto px-4 pb-8">

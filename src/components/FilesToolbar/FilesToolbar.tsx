@@ -92,7 +92,7 @@ export function FilesToolbar({
             type="button"
             // disabled={!selectedBucket && customBucket.trim() === ""}
             onClick={openUploadDialog}
-            className="px-3 py-1 text-xs md:text-sm rounded bg-blue-600 text-white hover:bg-blue-700 disabled:opacity-50 disabled:cursor-not-allowed"
+            className="px-3 py-1 text-xs md:text-sm rounded bg-violet-700 text-white cursor-pointer hover:bg-violet-600 disabled:opacity-50 disabled:cursor-not-allowed"
           >
             Upload
           </button>

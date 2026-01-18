@@ -4,20 +4,18 @@ import axios from "axios";
 
 import type { Bucket } from "./types/bucket";
 import type { FileItem } from "./types/filteItem";
-import { SafeLink } from "./components/SafeLink/SafeLink";
 import { BucketsSection } from "./components/BucketSection/BucketSection";
 import { FilesToolbar } from "./components/FilesToolbar/FilesToolbar";
 import { FileTable } from "./components/FileTable/FileTable";
 import { FilePreview } from "./components/FilePreview/FilePreivew";
-import { useYourIdAuth } from "./sdk/useYourIDAuth";
 
 function App() {
   // 1) Usamos el SDK
-  useYourIdAuth({
-    applicationBaseUrl: import.meta.env.VITE_APPLICATION_URL,
-    yourIdLoginUrl: import.meta.env.VITE_YOUR_ID_LOGIN_URL,
-    env: import.meta.env.VITE_ENV, // "dev" | "prod"
-  });
+  // useYourIdAuth({
+  //   applicationBaseUrl: import.meta.env.VITE_APPLICATION_URL,
+  //   yourIdLoginUrl: import.meta.env.VITE_YOUR_ID_LOGIN_URL,
+  //   env: import.meta.env.VITE_ENV, // "dev" | "prod"
+  // });
 
   const [buckets, setBuckets] = useState<Bucket[]>([]);
   const [selectedBucket, setSelectedBucket] = useState<string | null>(null);
@@ -157,17 +155,7 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50">
-      <header className="mb-4 p-4 bg-violet-800 border-b border-gray-400 flex items-center justify-between">
-        <SafeLink
-          to="/"
-          className="text-white hover:underline text-lg font-semibold"
-        >
-          Host
-        </SafeLink>
-        <h1 className="text-2xl md:text-3xl text-white">ATENA</h1>
-      </header>
-
+    <div className="min-h-screen bg-gray-50 mt-8">
       <main className="max-w-5xl mx-auto px-4 pb-8">
         <BucketsSection
           buckets={buckets}

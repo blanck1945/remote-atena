@@ -39,7 +39,7 @@ export function Stats() {
         <div className="mb-6 flex items-center justify-between">
           <h1 className="text-3xl font-bold text-gray-900">Estadísticas</h1>
           <SafeLink
-            to="/"
+            to=".."
             className="text-violet-600 hover:text-violet-800 underline"
           >
             Volver a archivos

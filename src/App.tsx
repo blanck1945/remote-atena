@@ -18,6 +18,15 @@ function App() {
   //   env: import.meta.env.VITE_ENV, // "dev" | "prod"
   // });
 
+  // Redirigir en producción si está en remote-atena.vercel.app
+  useEffect(() => {
+    // Si la URL en la barra del navegador es la de la Remote
+    if (window.location.hostname === 'remote-atena.vercel.app') {
+      // Mandarlo al Host
+      window.location.href = 'https://host-boogie.vercel.app/atena';
+    }
+  }, []);
+
   const [buckets, setBuckets] = useState<Bucket[]>([]);
   const [selectedBucket, setSelectedBucket] = useState<string | null>(null);
 

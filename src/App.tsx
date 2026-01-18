@@ -169,7 +169,7 @@ function App() {
       <main className="max-w-5xl mx-auto px-4 pb-8">
         <div className="mb-6 flex justify-end">
           <SafeLink
-            to="/stats"
+            to="stats"
             className="text-violet-600 hover:text-violet-800 underline"
           >
             Ver estadísticas

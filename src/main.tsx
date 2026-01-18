@@ -15,7 +15,9 @@ const router = createBrowserRouter([
     path: "/stats",
     element: <Stats />,
   },
-]);
+], {
+  basename: '/atena', // Esto hace que /stats se convierta en /atena/stats
+});
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>

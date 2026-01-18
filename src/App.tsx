@@ -4,6 +4,7 @@ import axios from "axios";
 
 import type { Bucket } from "./types/bucket";
 import type { FileItem } from "./types/filteItem";
+import { SafeLink } from "./components/SafeLink/SafeLink";
 import { BucketsSection } from "./components/BucketSection/BucketSection";
 import { FilesToolbar } from "./components/FilesToolbar/FilesToolbar";
 import { FileTable } from "./components/FileTable/FileTable";
@@ -157,6 +158,14 @@ function App() {
   return (
     <div className="min-h-screen bg-gray-50 mt-8">
       <main className="max-w-5xl mx-auto px-4 pb-8">
+        <div className="mb-6 flex justify-end">
+          <SafeLink
+            to="/stats"
+            className="text-violet-600 hover:text-violet-800 underline"
+          >
+            Ver estadísticas
+          </SafeLink>
+        </div>
         <BucketsSection
           buckets={buckets}
           selectedBucket={selectedBucket}

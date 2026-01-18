@@ -1,0 +1,14 @@
+{
+    "redirects": [
+        {
+            "source": "/",
+            "destination": "https://host-boogie.vercel.app/atena",
+            "permanent": false
+        },
+        {
+            "source": "/index.html",
+            "destination": "https://host-boogie.vercel.app/atena",
+            "permanent": false
+        }
+    ]
+}
